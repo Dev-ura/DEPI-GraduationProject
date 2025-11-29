@@ -1,40 +1,49 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Codexly.Models;
 
 namespace Codexly.Controllers
 {
+    [Authorize] // Only logged-in users can access Notes
     public class NotesController : Controller
     {
         private readonly IRepository<Note> _repo;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public NotesController(IRepository<Note> repo)
+        //  Inject the repository and UserManager to access current user
+        public NotesController(IRepository<Note> repo, UserManager<IdentityUser> userManager)
         {
             _repo = repo;
+            _userManager = userManager;
         }
 
-        // GET: /Notes
+        // INDEX: List all notes owned by current user
         public async Task<IActionResult> Index()
         {
-            var notes = await _repo.GetAllAsync();
+            var userGuid = Guid.Parse(_userManager.GetUserId(User)); // get logged in user id
+            var queryOptions = new QueryOptions<Note>();
+            var notes = await _repo.GetAllByIdAsync(userGuid, nameof(Note.UserId), queryOptions);
             return View(notes);
         }
 
-        // GET: /Notes/Details/{id}
+        // DETAILS: Show a single note owned by current user
         public async Task<IActionResult> Details(Guid id)
         {
-            var note = await _repo.GetAllByIdAsync(id, nameof(Note.NoteId), new QueryOptions<Note>());
-            var singleNote = note.FirstOrDefault();
-            if (singleNote == null) return NotFound();
-            return View(singleNote);
+            var userGuid = Guid.Parse(_userManager.GetUserId(User));
+            var notes = await _repo.GetAllByIdAsync(userGuid, nameof(Note.UserId), new QueryOptions<Note>());
+            var note = notes.FirstOrDefault(n => n.NoteId == id);
+            if (note == null) return NotFound(); //  prevents accessing someone else's note
+            return View(note);
         }
 
-        // GET: /Notes/Create
+        // CREATE: GET form
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: /Notes/Create
+        // CREATE: POST form submission
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Note note)
@@ -44,26 +53,34 @@ namespace Codexly.Controllers
                 note.NoteId = Guid.NewGuid();
                 note.CreatedAt = DateTime.Now;
 
+                //  Assign ownership to current user
+                note.UserId = Guid.Parse(_userManager.GetUserId(User));
+
                 await _repo.AddAsync(note);
                 return RedirectToAction(nameof(Index));
             }
             return View(note);
         }
 
-        // GET: /Notes/Edit/{id}
+        // EDIT: GET form
         public async Task<IActionResult> Edit(Guid id)
         {
-            var note = (await _repo.GetAllByIdAsync(id, nameof(Note.NoteId), new QueryOptions<Note>())).FirstOrDefault();
-            if (note == null) return NotFound();
+            var userGuid = Guid.Parse(_userManager.GetUserId(User));
+            var notes = await _repo.GetAllByIdAsync(userGuid, nameof(Note.UserId), new QueryOptions<Note>());
+            var note = notes.FirstOrDefault(n => n.NoteId == id);
+            if (note == null) return NotFound(); //  ownership check
             return View(note);
         }
 
-        // POST: /Notes/Edit/{id}
+        // EDIT: POST form submission
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, Note note)
         {
             if (id != note.NoteId) return BadRequest();
+
+            var userGuid = Guid.Parse(_userManager.GetUserId(User));
+            if (note.UserId != userGuid) return Unauthorized(); //  ensure user owns the note
 
             if (ModelState.IsValid)
             {
@@ -74,19 +91,26 @@ namespace Codexly.Controllers
             return View(note);
         }
 
-        // GET: /Notes/Delete/{id}
+        // DELETE: GET confirmation page
         public async Task<IActionResult> Delete(Guid id)
         {
-            var note = (await _repo.GetAllByIdAsync(id, nameof(Note.NoteId), new QueryOptions<Note>())).FirstOrDefault();
-            if (note == null) return NotFound();
+            var userGuid = Guid.Parse(_userManager.GetUserId(User));
+            var notes = await _repo.GetAllByIdAsync(userGuid, nameof(Note.UserId), new QueryOptions<Note>());
+            var note = notes.FirstOrDefault(n => n.NoteId == id);
+            if (note == null) return NotFound(); //  ownership check
             return View(note);
         }
 
-        // POST: /Notes/Delete/{id}
+        // DELETE: POST form submission
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
+            var userGuid = Guid.Parse(_userManager.GetUserId(User));
+            var notes = await _repo.GetAllByIdAsync(userGuid, nameof(Note.UserId), new QueryOptions<Note>());
+            var note = notes.FirstOrDefault(n => n.NoteId == id);
+            if (note == null) return NotFound(); // ownership check
+
             await _repo.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
