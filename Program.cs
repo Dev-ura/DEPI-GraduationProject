@@ -1,4 +1,5 @@
 using Codexly.Data;
+using Codexly.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +20,10 @@ namespace Codexly
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+            
+            // DI
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
 
             var app = builder.Build();
 
