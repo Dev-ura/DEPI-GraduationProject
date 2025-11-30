@@ -1,4 +1,5 @@
 using Codexly.Data;
+using Codexly.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -43,7 +44,7 @@ namespace Codexly
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Notes}/{action=Create}/{id?}");
             app.MapRazorPages();
 
             app.Run();

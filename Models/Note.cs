@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 
 namespace Codexly.Models;
@@ -19,5 +20,6 @@ public partial class Note
 
     public string? Category { get; set; }
 
+    [ValidateNever]
     public virtual User User { get; set; } = null!;
 }
