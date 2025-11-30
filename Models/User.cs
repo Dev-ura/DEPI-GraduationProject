@@ -14,6 +14,7 @@ namespace Account_Test.Models
 
 
         public ICollection<Note> Notes { get; set; } = new List<Note>();
-        public ICollection<Todo> Todos { get; set; } = new List<Todo> ();
+        public ICollection<Todo> Todos { get; set; } = new List<Todo>();
+        public ICollection<Plan> Plans { get; set; } = new List<Plan>();
     }
 }

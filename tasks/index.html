@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <style>
+        /* Fallback if style.css fails to load quickly */
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">CODEXLY</div>
+      <nav class="header-nav">
+        <a href="../home/index.html" class="nav-link">Home</a>
+        <a href="../profile/index.html" class="nav-link">Profile</a>
+        <a href="../dashboard/index.html" class="nav-link">Dashboard</a>
+        <a href="../Courses/index.html" class="nav-link">Courses</a>
+        <a href="#" class="nav-link active to-do-list-btn">To-Do-List</a>
+        <a href="../notes/index.html" class="nav-link">My Notes</a>
+        <a href="../roadmaps/index.html" class="nav-link">Roadmaps</a>
+        <a href="../white board/index.html" class="nav-link">White Board</a>
+        <a href="../contact/index.html" class="nav-link">Contact</a>
+        <a href="../about/index.html" class="nav-link">About</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <h1 class="title">My to do list</h1>
+
+      <div class="new-plan">
+        <input id="new-plan-input" type="text" placeholder="Add a new plan" autocomplete="off" />
+        <button id="add-plan-btn" type="button">Add</button>
+      </div>
+
+      <section id="plans" class="plans"></section>
+
+
+    </main>
+  </body>
+  </html>
+
+
+

@@ -13,6 +13,7 @@ namespace Account_Test.Data
 
         public DbSet<Note> Notes { get; set; }
         public DbSet<Todo> Todos { get; set; }
+        public DbSet<Plan> Plans { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -68,6 +69,25 @@ namespace Account_Test.Data
 
                 entity.HasOne(e => e.User)
                       .WithMany(u => u.Todos)
+                      .HasForeignKey(e => e.UserId);
+
+                entity.HasOne(e => e.Plan)
+                      .WithMany(p => p.Todos)
+                      .HasForeignKey(e => e.PlanId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Plans
+            modelBuilder.Entity<Plan>(entity =>
+            {
+                entity.ToTable("Plans");
+                entity.HasKey(e => e.PlanId);
+                entity.Property(e => e.PlanId).HasDefaultValueSql("newid()");
+                entity.Property(e => e.CreatedAt).HasDefaultValueSql("getdate()");
+                entity.Property(e => e.Title).IsRequired().HasMaxLength(255);
+
+                entity.HasOne(e => e.User)
+                      .WithMany(u => u.Plans)
                       .HasForeignKey(e => e.UserId);
             });
 
