@@ -1,8 +1,6 @@
-// Simple Markdown Notes (localStorage + ASP.NET post)
+// Simple Markdown Notes (API-based)
 (function () {
     "use strict";
-
-    const STORAGE_KEY = "codexly_notes_v1";
 
     const listEl = document.getElementById("notes-list");
     const titleEl = document.getElementById("note-title");
@@ -12,43 +10,27 @@
     const addBtn = document.getElementById("add-note");
     const deleteBtn = document.getElementById("delete-note");
     const saveIndicator = document.getElementById("save-indicator");
-    const formEl = document.querySelector(".editor"); // your existing form
 
-    /** @type {{ id:string, dbId?:string, title:string, body:string, updatedAt:number }[]} */
     let notes = [];
     let activeId = null;
     let saveTimeout = null;
 
     function load() {
-        try {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (raw) {
-                const parsed = JSON.parse(raw);
-                if (Array.isArray(parsed)) notes = parsed;
-            }
-        } catch (_) { }
-
-        if (!activeId && notes[0]) activeId = notes[0].id;
-        renderList();
-        renderEditor();
-    }
-
-    function persist() {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(notes));
-    }
-
-    function createNote(title, body) {
-        return {
-            id: "n_" + Math.random().toString(36).slice(2, 10),
-            title: title || "Untitled",
-            body: body || "",
-            updatedAt: Date.now(),
-        };
+        fetch('/Notes/GetNotes')
+            .then(response => response.json())
+            .then(data => {
+                notes = data;
+                if (!activeId && notes[0]) activeId = notes[0].id;
+                renderList();
+                renderEditor();
+            })
+            .catch(err => console.error("Error loading notes:", err));
     }
 
     function renderList() {
         listEl.innerHTML = "";
-        const sorted = [...notes].sort((a, b) => b.updatedAt - a.updatedAt);
+        // Sort by updatedAt descending
+        const sorted = [...notes].sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
         for (const note of sorted) {
             const li = document.createElement("li");
             li.dataset.id = note.id;
@@ -108,70 +90,104 @@
         saveIndicator.textContent = "Saving…";
         if (saveTimeout) clearTimeout(saveTimeout);
         saveTimeout = setTimeout(() => {
-            persist();
             const active = notes.find(n => n.id === activeId);
-            if (active && !active.dbId) postNoteToServer(active);
-            saveIndicator.textContent = "Saved";
-            setTimeout(() => (saveIndicator.textContent = ""), 1200);
-        }, 300);
+            if (active) {
+                saveNoteToServer(active);
+            }
+        }, 500);
     }
 
-    function postNoteToServer(note) {
-        if (!formEl) return;
-        
-        const formData = new FormData(formEl);
-        formData.set("Title", note.title);
-        formData.set("ContentMarkdown", note.body);
+    function saveNoteToServer(note) {
+        // If it has a temp ID (starts with "temp_"), it's new
+        const isNew = note.id.toString().startsWith("temp_");
+        const url = isNew ? '/Notes/CreateNote' : '/Notes/UpdateNote';
+        const method = isNew ? 'POST' : 'PUT';
 
-        fetch(formEl.action, {
-            method: "POST",
-            body: formData,
+        const payload = {
+            id: isNew ? null : note.id,
+            title: note.title,
+            body: note.body
+        };
+
+        fetch(url, {
+            method: method,
             headers: {
-                "Accept": "application/json",
-                "X-Requested-With": "XMLHttpRequest"
-            }
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                note.dbId = data.id;
-                persist();
-                console.log("Note saved to server with ID:", data.id);
-            } else {
-                console.error("Server validation failed:", data.errors);
-            }
-        })
-        .catch(err => console.error("Error saving note:", err));
+            .then(response => response.json())
+            .then(data => {
+                if (isNew) {
+                    // Update the temp ID with real ID from server
+                    note.id = data.id;
+                    activeId = data.id; // Update activeId if we were editing the new note
+                }
+                note.updatedAt = new Date().toISOString();
+                saveIndicator.textContent = "Saved";
+                setTimeout(() => (saveIndicator.textContent = ""), 1200);
+                renderList(); // Re-render to update ID/sort
+            })
+            .catch(err => {
+                console.error("Error saving note:", err);
+                saveIndicator.textContent = "Error";
+            });
     }
 
     // Event listeners
     addBtn.addEventListener("click", () => {
-        const newNote = createNote("Untitled", "");
+        // Create a temporary note object
+        const newNote = {
+            id: "temp_" + Date.now(),
+            title: "Untitled",
+            body: "",
+            updatedAt: new Date().toISOString()
+        };
         notes.unshift(newNote);
         activeId = newNote.id;
         renderList();
         renderEditor();
-        debounceSave();
+        // Save immediately to get a real ID
+        saveNoteToServer(newNote);
     });
 
     deleteBtn.addEventListener("click", () => {
         if (!activeId) return;
-        const idx = notes.findIndex(n => n.id === activeId);
+        const note = notes.find(n => n.id === activeId);
+        if (!note) return;
+
+        if (confirm("Are you sure you want to delete this note?")) {
+            // If it's a temp note that hasn't been saved yet, just remove locally
+            if (note.id.toString().startsWith("temp_")) {
+                removeLocalNote(note.id);
+                return;
+            }
+
+            fetch(`/Notes/DeleteNote?id=${note.id}`, {
+                method: 'DELETE'
+            })
+                .then(() => {
+                    removeLocalNote(note.id);
+                })
+                .catch(err => console.error("Error deleting note:", err));
+        }
+    });
+
+    function removeLocalNote(id) {
+        const idx = notes.findIndex(n => n.id === id);
         if (idx >= 0) {
             notes.splice(idx, 1);
             activeId = notes[0] ? notes[0].id : null;
             renderList();
             renderEditor();
-            debounceSave();
         }
-    });
+    }
 
     titleEl.addEventListener("input", e => {
         const active = notes.find(n => n.id === activeId);
         if (!active) return;
         active.title = e.target.value;
-        active.updatedAt = Date.now();
-        renderList();
+        renderList(); // Update title in list
         debounceSave();
     });
 
@@ -179,11 +195,17 @@
         const active = notes.find(n => n.id === activeId);
         if (!active) return;
         active.body = e.target.value;
-        active.updatedAt = Date.now();
-        renderList();
         renderPreview();
         debounceSave();
     });
+
+    // Prevent form submission (since we use AJAX)
+    const form = document.getElementById("note-form");
+    if (form) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+        });
+    }
 
     load();
 })();

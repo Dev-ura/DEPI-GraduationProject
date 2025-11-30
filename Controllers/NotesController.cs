@@ -27,25 +27,28 @@ namespace Account_Test.Controllers
         // GET: Notes
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Notes.Include(n => n.User);
-            return View(await applicationDbContext.ToListAsync());
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            var notes = _context.Notes
+                .Include(n => n.User)
+                .Where(n => n.UserId == user.Id);
+            return View(await notes.ToListAsync());
         }
 
         // GET: Notes/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
 
             var note = await _context.Notes
                 .Include(n => n.User)
-                .FirstOrDefaultAsync(m => m.NoteId == id);
-            if (note == null)
-            {
-                return NotFound();
-            }
+                .FirstOrDefaultAsync(m => m.NoteId == id && m.UserId == user.Id);
+
+            if (note == null) return NotFound();
 
             return View(note);
         }
@@ -53,7 +56,6 @@ namespace Account_Test.Controllers
         // GET: Notes/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
             return View();
         }
 
@@ -106,24 +108,20 @@ namespace Account_Test.Controllers
                     ));
             }
 
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", note.UserId);
             return View(note);
         }
 
         // GET: Notes/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var note = await _context.Notes.FindAsync(id);
-            if (note == null)
-            {
-                return NotFound();
-            }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", note.UserId);
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            var note = await _context.Notes.FirstOrDefaultAsync(n => n.NoteId == id && n.UserId == user.Id);
+            if (note == null) return NotFound();
+            
             return View(note);
         }
 
@@ -132,12 +130,17 @@ namespace Account_Test.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("NoteId,UserId,Title,ContentMarkdown,CreatedAt,UpdatedAt,Category")] Note note)
+        public async Task<IActionResult> Edit(Guid id, [Bind("NoteId,Title,ContentMarkdown,CreatedAt,UpdatedAt,Category")] Note note)
         {
-            if (id != note.NoteId)
-            {
-                return NotFound();
-            }
+            if (id != note.NoteId) return NotFound();
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            var existingNote = await _context.Notes.AsNoTracking().FirstOrDefaultAsync(n => n.NoteId == id && n.UserId == user.Id);
+            if (existingNote == null) return NotFound();
+
+            note.UserId = user.Id; // Ensure ownership is preserved
 
             if (ModelState.IsValid)
             {
@@ -148,52 +151,46 @@ namespace Account_Test.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!NoteExists(note.NoteId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!NoteExists(note.NoteId)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", note.UserId);
             return View(note);
         }
 
         // GET: Notes/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
 
             var note = await _context.Notes
                 .Include(n => n.User)
-                .FirstOrDefaultAsync(m => m.NoteId == id);
-            if (note == null)
-            {
-                return NotFound();
-            }
+                .FirstOrDefaultAsync(m => m.NoteId == id && m.UserId == user.Id);
+
+            if (note == null) return NotFound();
 
             return View(note);
         }
 
         // POST: Notes/Delete/5
+        // POST: Notes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var note = await _context.Notes.FindAsync(id);
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            var note = await _context.Notes.FirstOrDefaultAsync(n => n.NoteId == id && n.UserId == user.Id);
             if (note != null)
             {
                 _context.Notes.Remove(note);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -201,5 +198,94 @@ namespace Account_Test.Controllers
         {
             return _context.Notes.Any(e => e.NoteId == id);
         }
+
+        // API: GET all notes
+        [HttpGet]
+        public async Task<IActionResult> GetNotes()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Unauthorized();
+
+            var notes = await _context.Notes
+                .Where(n => n.UserId == user.Id)
+                .OrderByDescending(n => n.UpdatedAt)
+                .Select(n => new
+                {
+                    id = n.NoteId,
+                    title = n.Title,
+                    body = n.ContentMarkdown,
+                    updatedAt = n.UpdatedAt
+                })
+                .ToListAsync();
+
+            return Json(notes);
+        }
+
+        // API: POST create note
+        [HttpPost]
+        public async Task<IActionResult> CreateNote([FromBody] NoteRequest request)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Unauthorized();
+
+            var note = new Note
+            {
+                NoteId = Guid.NewGuid(),
+                UserId = user.Id,
+                Title = request.Title ?? "Untitled",
+                ContentMarkdown = request.Body,
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now
+            };
+
+            _context.Notes.Add(note);
+            await _context.SaveChangesAsync();
+
+            return Json(new { id = note.NoteId, title = note.Title, body = note.ContentMarkdown, updatedAt = note.UpdatedAt });
+        }
+
+        // API: PUT update note
+        [HttpPut]
+        public async Task<IActionResult> UpdateNote([FromBody] NoteRequest request)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Unauthorized();
+
+            if (request.Id == null) return BadRequest();
+
+            var note = await _context.Notes.FirstOrDefaultAsync(n => n.NoteId == request.Id && n.UserId == user.Id);
+            if (note == null) return NotFound();
+
+            note.Title = request.Title ?? "Untitled";
+            note.ContentMarkdown = request.Body;
+            note.UpdatedAt = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            return Json(new { success = true });
+        }
+
+        // API: DELETE note
+        [HttpDelete]
+        public async Task<IActionResult> DeleteNote(Guid id)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Unauthorized();
+
+            var note = await _context.Notes.FirstOrDefaultAsync(n => n.NoteId == id && n.UserId == user.Id);
+            if (note == null) return NotFound();
+
+            _context.Notes.Remove(note);
+            await _context.SaveChangesAsync();
+
+            return Json(new { success = true });
+        }
+    }
+
+    public class NoteRequest
+    {
+        public Guid? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Body { get; set; }
     }
 }
