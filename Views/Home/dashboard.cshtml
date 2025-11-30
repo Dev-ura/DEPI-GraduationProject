@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CODEXLY</title>
+    <link rel="stylesheet" href="~/css/dashboard/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">CODEXLY</div>
+        <nav class="header-nav">
+            <a href="/home" class="nav-link">Home</a>
+            <a href="/profile" class="nav-link">Profile</a>
+            <a href="/dashboard" class="nav-link">Dashboard</a>
+            <a href="/courses" class="nav-link">Courses</a>
+            <a href="/todolist" class="nav-link">To-Do List</a>
+            <a href="/notes" class="nav-link">My Notes</a>
+            <a href="/roadmaps" class="nav-link">Roadmaps</a>
+            <a href="/whiteboard" class="nav-link">Whiteboard</a>
+            <a href="/contact" class="nav-link">Contact</a>
+            <a href="/about" class="nav-link active about-btn">About</a>
+
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>Dashboard</h1>
+                <p>Welcome Back!</p>
+            </div>
+
+            <section class="progress-section">
+                <h2>My Progress</h2>
+                <div class="progress-cards" id="progress-cards">
+                </div>
+            </section>
+
+            <section class="quick-access-section">
+                <h2>Quick Access</h2>
+                <div class="quick-access-cards" id="quick-access-cards">
+                </div>
+            </section>
+
+            <section class="recommended-section">
+                <h2>Recommended Courses</h2>
+                <div class="recommended-grid" id="recommended-grid">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="/about">> About Us</a></li>
+                    <li><a href="/privacy">> Privacy Security</a></li>
+                    <li><a href="/terms">> Terms Of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">> Facebook</a></li>
+                    <li><a href="https://x.com" target="_blank" rel="noopener">> X</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Need Help ?</h3>
+                <ul>
+                    <li><a href="/faq">> FAQs</a></li>
+                    <li><a href="/support">> Support</a></li>
+                    <li><a href="/contact">> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="~/js/dashboard/app.js"></script>
+</body>
+</html>

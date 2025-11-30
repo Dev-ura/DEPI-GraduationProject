@@ -1,0 +1,334 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header & Navbar (Edit Profile / Home / Profile style) */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.header-left {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #ffffff; /* pure white */
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 1;
+    transition: color 150ms ease, opacity 150ms ease;
+}
+
+.nav-link:hover {
+    color: #cfcfcf; /* grey on hover */
+    opacity: 1;
+}
+
+.dashboard-btn, .dashboard-btn.active {
+    background-color: #d9d9d9;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.sign-in-btn {
+    background-color: #e0e0e0;
+    color: #000000;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #cccccc;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 70px - 200px); /* Adjust based on header/footer height */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem 4rem;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.welcome-section {
+    margin-bottom: 3rem;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+/* Progress Section */
+.progress-section {
+    margin-bottom: 3rem;
+}
+
+.progress-section h2, .quick-access-section h2, .recommended-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.progress-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.progress-card {
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #000000;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: #000000; /* Design shows black bar on black bg? No, bar is black, track is maybe transparent or light */
+}
+/* Correction based on design: Track is black line, fill is same? Or track is grey, fill is black. Design shows thick black line. */
+.progress-bar {
+    background-color: #ccc; 
+}
+.fill {
+    background-color: #000000;
+}
+
+.continue-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    font-size: 0.9rem;
+    transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.continue-btn:hover {
+    background-color: #222222;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.continue-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+}
+
+.continue-btn:focus {
+    outline: 3px solid rgba(0,0,0,0.08);
+    outline-offset: 2px;
+}
+
+/* Quick Access Section */
+.quick-access-section {
+    margin-bottom: 3rem;
+}
+
+.quick-access-cards {
+    display: flex;
+    gap: 2rem;
+}
+
+.qa-card {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.qa-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.qa-content .icon {
+    font-size: 2rem;
+}
+
+.qa-content h3 {
+    font-size: 1.1rem;
+}
+
+.qa-content p {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.view-all-btn {
+    background-color: #e0e0e0;
+    color: #000000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.view-all-btn:hover {
+    background-color: #d4d4d4;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.view-all-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+}
+
+/* Recommended Section */
+.recommended-grid {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    background-color: #e0e0e0; /* Light grey container background */
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.rec-card {
+    background-color: #ffffff; /* Default white */
+    padding: 1.5rem;
+    border-radius: 8px;
+    min-width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rec-card:nth-child(odd) {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.rec-card .icon {
+    font-size: 1.5rem;
+}
+
+.rec-card p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Footer (Reused) */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
