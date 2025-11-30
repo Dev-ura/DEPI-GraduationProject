@@ -300,3 +300,7 @@ H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\refint
 H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.pdb
 H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.genruntimeconfig.cache
 H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\ref\Account Test.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.sourcelink.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.MvcApplicationPartsAssemblyInfo.cs

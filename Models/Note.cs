@@ -10,6 +10,6 @@
         public DateTime? UpdatedAt { get; set; }
         public string? Category { get; set; }
 
-        public User User { get; set; }
+        public User? User { get; set; }
     }
 }

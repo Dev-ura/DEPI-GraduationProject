@@ -7,16 +7,21 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Account_Test.Models;
 using Account_Test.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Account_Test.Controllers
 {
+    [Authorize]
     public class NotesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public NotesController(AppDbContext context)
+        public NotesController(AppDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Notes
@@ -57,15 +62,42 @@ namespace Account_Test.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Title,ContentMarkdown,CreatedAt,UpdatedAt,Category")] Note note)
+        public async Task<IActionResult> Create([Bind("Title,ContentMarkdown,CreatedAt,UpdatedAt,Category")] Note note)
         {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Challenge();
+            }
+
+            note.UserId = user.Id;
+            // Remove UserId and User from ModelState as we set them manually
+            ModelState.Remove("UserId");
+            ModelState.Remove("User");
+
             if (ModelState.IsValid)
             {
                 note.NoteId = Guid.NewGuid();
+                note.CreatedAt = DateTime.Now;
+                note.UpdatedAt = DateTime.Now;
                 _context.Add(note);
                 await _context.SaveChangesAsync();
+                
+                // Return JSON for AJAX requests
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest" || Request.Headers.Accept.ToString().Contains("application/json"))
+                {
+                    return Json(new { success = true, id = note.NoteId });
+                }
+
                 return RedirectToAction(nameof(Index));
             }
+            
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest" || Request.Headers.Accept.ToString().Contains("application/json"))
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                return Json(new { success = false, errors = errors });
+            }
+
             if (!ModelState.IsValid)
             {
                 return Content(string.Join("\n",

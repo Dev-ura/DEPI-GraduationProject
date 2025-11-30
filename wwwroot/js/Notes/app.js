@@ -118,10 +118,30 @@
 
     function postNoteToServer(note) {
         if (!formEl) return;
-        // Use existing form
-        formEl.Title.value = note.title;
-        formEl.ContentMarkdown.value = note.body;
-        formEl.submit();
+        
+        const formData = new FormData(formEl);
+        formData.set("Title", note.title);
+        formData.set("ContentMarkdown", note.body);
+
+        fetch(formEl.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json",
+                "X-Requested-With": "XMLHttpRequest"
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                note.dbId = data.id;
+                persist();
+                console.log("Note saved to server with ID:", data.id);
+            } else {
+                console.error("Server validation failed:", data.errors);
+            }
+        })
+        .catch(err => console.error("Error saving note:", err));
     }
 
     // Event listeners
