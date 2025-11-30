@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #f5f6f8; color: #111; }
+.header { background-color: #000; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,.25); }
+.header-left { font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; }
+.header-nav { display: flex; align-items: center; gap: 30px; }
+.nav-link { color: #fff; text-decoration: none; font-weight: 400; font-size: 1rem; opacity: .85; }
+.nav-link:hover { color: #cfcfcfbf; opacity: 1; }
+.sign-up-btn { background-color: #d3d3d3; color: #fff; padding: 8px 20px; border-radius: 5px; text-decoration: none; font-weight: 400; font-size: 1rem; border: 1px solid #666; box-shadow: 0 2px 6px rgba(0,0,0,.2); }
+.page { max-width: 1200px; margin: 24px auto; background: #000; color: #fff; border-radius: 8px; padding: 28px 24px 160px; }
+.title { text-align: center; margin: 0 0 16px; }
+.faq { max-width: 900px; margin: 0 auto; display: grid; gap: 12px; }
+.faq .item { background: #111; color: #fff; border: 1px solid #222; border-radius: 10px; padding: 12px 14px; }
+.faq h3 { margin: 0 0 6px; font-size: 16px; }
+
+.footer {
+  background-color: #000;
+  color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+
+

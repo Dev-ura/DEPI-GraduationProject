@@ -1,0 +1,257 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header & Navbar (Edit Profile / FAQ style) */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.header-left {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #ffffff; /* pure white */
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 1;
+    transition: color 150ms ease, opacity 150ms ease;
+}
+
+.nav-link:hover {
+    color: #cfcfcf; /* grey on hover */
+    opacity: 1;
+}
+
+.home-btn, .home-btn.active {
+    background-color: #d9d9d9;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.sign-in-btn {
+    background-color: #e0e0e0;
+    color: #000000;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #cccccc;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+}
+
+.cta-btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.course-card {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.course-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.course-card .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    float: right; /* Icon on the right as per design */
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    clear: both;
+}
+
+/* Tools Section */
+.tools-section {
+    background-color: #d9d9d9; /* Light grey background */
+    padding: 4rem 2rem;
+    text-align: center;
+    display: none;
+}
+
+.tools-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #000000;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tool-card {
+    background-color: #000000;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* Square cards */
+    position: relative;
+}
+
+.tool-label {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.tool-image-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 2rem; /* Space for label */
+}
+
+/* Footer (Reused) */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}

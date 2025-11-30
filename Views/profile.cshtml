@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CODEXLY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header class="header">
+            <div class="header-left">CODEXLY</div>
+            <nav class="header-nav">
+                <a href="../home/index.html" class="nav-link">Home</a>
+                <a href="../profile/index.html" class="nav-link active profile-btn">Profile</a>
+                <a href="../dashboard/index.html" class="nav-link">Dashboard</a>
+                <a href="../Courses/index.html" class="nav-link">Courses</a>
+                <a href="../to do list/index.html" class="nav-link">To-Do-List</a>
+                <a href="../notes/index.html" class="nav-link">My Notes</a>
+                <a href="../roadmaps/index.html" class="nav-link">Roadmaps</a>
+                <a href="../white board/index.html" class="nav-link">White Board</a>
+                <a href="../contact/index.html" class="nav-link">Contact</a>
+                <a href="../about/index.html" class="nav-link">About</a>
+            </nav>
+        </header>
+
+    <main>
+        <div class="profile-container">
+            <section class="profile-header">
+                <div class="profile-info">
+                    <div class="avatar-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+                            <path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="user-details">
+                        <h1 id="user-name">Student Name</h1>
+                        <p id="user-title">Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <a href="../edit profile/index.html" class="action-btn">Edit Profile</a>
+                    <button class="action-btn">Add Another Account</button>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <button id="edit-about-btn" class="edit-btn">Edit</button>
+                </div>
+                <div class="about-content-box">
+                    <p id="about-text">
+                        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+                    </p>
+                    <textarea id="about-input" style="display: none;"></textarea>
+                </div>
+            </section>
+
+            <section class="courses-section">
+                <h2>My Courses</h2>
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Courses will be populated by JS -->
+                    <button class="course-btn">Java Programming</button>
+                    <button class="course-btn">Web Development</button>
+                    <button class="course-btn">Data Analysis</button>
+                    <button class="course-btn">Data Structures</button>
+                    <button class="course-btn">+ Add Course</button>
+                </div>
+            </section>
+
+            <div class="logout-container">
+                <button class="logout-btn">Log out <span class="icon">↪</span></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="../about/index.html">> About Us</a></li>
+                    <li><a href="../privacy/index.html">> Privacy Security</a></li>
+                    <li><a href="../terms/index.html">> Terms Of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">> Facebook</a></li>
+                    <li><a href="https://x.com" target="_blank" rel="noopener">> X</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Need Help ?</h3>
+                <ul>
+                    <li><a href="../faq/index.html">> FAQs</a></li>
+                    <li><a href="../support/index.html">> Support</a></li>
+                    <li><a href="#">> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

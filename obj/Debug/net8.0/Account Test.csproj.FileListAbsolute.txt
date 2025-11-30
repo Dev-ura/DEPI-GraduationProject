@@ -1,0 +1,302 @@
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\appsettings.Development.json
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\appsettings.json
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.staticwebassets.runtime.json
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.staticwebassets.endpoints.json
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.exe
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.deps.json
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.runtimeconfig.json
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Account Test.pdb
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Azure.Core.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Azure.Identity.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Humanizer.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.ClientModel.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.CodeDom.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Depi new final project\New folder\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.csproj.AssemblyReference.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.AssemblyInfoInputs.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.AssemblyInfo.cs
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.csproj.CoreCompileInputs.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.MvcApplicationPartsAssemblyInfo.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.RazorAssemblyInfo.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.RazorAssemblyInfo.cs
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.sourcelink.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\scopedcss\bundle\Account Test.styles.css
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\scopedcss\projectbundle\Account Test.bundle.scp.css
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.build.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.development.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account .28933B88.Up2Date
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.dll
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\refint\Account Test.dll
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.pdb
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\Account Test.genruntimeconfig.cache
+D:\Depi new final project\New folder\Account Test\Account Test\obj\Debug\net8.0\ref\Account Test.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.csproj.AssemblyReference.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\rpswa.dswa.cache.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.GeneratedMSBuildEditorConfig.editorconfig
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.AssemblyInfoInputs.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.AssemblyInfo.cs
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.csproj.CoreCompileInputs.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.MvcApplicationPartsAssemblyInfo.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.RazorAssemblyInfo.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.RazorAssemblyInfo.cs
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\appsettings.Development.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\appsettings.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.staticwebassets.runtime.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.staticwebassets.endpoints.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.exe
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.deps.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.runtimeconfig.json
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Account Test.pdb
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Azure.Core.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Azure.Identity.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Humanizer.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\Mono.TextTemplating.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.ClientModel.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.CodeDom.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Composition.Convention.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Composition.Hosting.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Composition.Runtime.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Composition.TypedParts.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Drawing.Common.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Memory.Data.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Runtime.Caching.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Security.Permissions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\System.Windows.Extensions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\rjimswa.dswa.cache.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\scopedcss\bundle\Account Test.styles.css
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\scopedcss\projectbundle\Account Test.bundle.scp.css
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.build.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.build.json.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.development.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account .28933B88.Up2Date
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\refint\Account Test.dll
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.pdb
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\Account Test.genruntimeconfig.cache
+H:\Visual Studio Code Projects\Account Test\Account Test\obj\Debug\net8.0\ref\Account Test.dll

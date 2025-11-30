@@ -1,0 +1,165 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navbar */
+header.header {
+    background-color: #000000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.header-left {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 150ms ease, opacity 150ms ease;
+    opacity: 1;
+}
+
+.nav-link:hover {
+    color: #cfcfcf;
+    opacity: 1;
+}
+
+.contact-btn, .contact-btn.active {
+    background-color: #d9d9d9;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners as per design */
+    background-color: #f2f2f2;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    border-radius: 25px;
+}
+
+.submit-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.75rem 3rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #333333;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.footer-column h3 span {
+    color: #888; /* Styling for the lighter text in headers if needed, though design shows bold/normal mix */
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}

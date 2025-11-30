@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Account_Test
+build_property.RootNamespace = Account_Test
+build_property.ProjectDir = H:\Visual Studio Code Projects\Account Test\Account Test\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = H:\Visual Studio Code Projects\Account Test\Account Test
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/editprofile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZWRpdHByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/faq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmYXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/roadmaps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyb2FkbWFwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/support.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzdXBwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/terms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0ZXJtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Home/whiteboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx3aGl0ZWJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/notes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm90ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Notes/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZXNcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/signin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2lnbmluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2lnbnVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/todolist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdG9kb2xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Visual Studio Code Projects/Account Test/Account Test/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-igmeaeuyt9
